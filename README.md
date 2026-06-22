@@ -1,6 +1,45 @@
 # Security-Monitoring-Detection-Lab
- Deploy Splunk, ingest Windows logs, monitor Active Directory events, build dashboards, create detections, investigate incidents, and automate reports.
+Splunk Active Directory Security Monitoring Lab
+Overview
 
+This project demonstrates the deployment of a Splunk-based security monitoring environment within a Windows Active Directory domain. A Splunk Universal Forwarder was configured on a Windows Server domain controller to securely forward Windows event logs into Splunk Cloud for centralized log analysis and security monitoring.
+
+The environment was used to collect and analyze Security, System, Application, and PowerShell logs, monitor Active Directory authentication activity, investigate security events, develop custom detections, and create dashboards for operational visibility. The project simulates common Security Operations Center (SOC) workflows including log ingestion, authentication monitoring, threat detection, incident investigation, and reporting.
+
+Technologies Used
+
+Infrastructure
+Windows Server
+Active Directory Domain Services (AD DS)
+Domain Controller (MSIT-DC01)
+
+SIEM & Monitoring
+
+Splunk Cloud
+Splunk Universal Forwarder
+Splunk Search Processing Language (SPL)
+
+Log Sources
+
+Windows Security Logs
+Windows System Logs
+Windows Application Logs
+Windows PowerShell Logs
+
+Security Monitoring Use Cases
+
+Successful Logon Monitoring (Event ID 4624)
+Failed Logon Monitoring (Event ID 4625)
+Account Lockout Monitoring (Event ID 4740)
+Privileged Group Membership Monitoring
+Authentication Investigation Workflows
+Detection Engineering
+Security Dashboard Development
+
+Reporting & Automation
+PowerShell
+CSV Log Export
+Automated Security Reporting
 ## Phase 1 — Environment Setup
 
 Deployed a Splunk Cloud security monitoring environment and configured a Splunk Universal Forwarder on a Windows Server domain controller. The forwarder was connected to Splunk Cloud using the Splunk Cloud Universal Forwarder credentials package and verified through an active SSL forwarding connection on port 9997.
