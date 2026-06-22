@@ -42,3 +42,50 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 ### Events by Host
 
 ![Events by Host](screenshots/proj2screenshots:phase2-host-counts.png)
+
+## Phase 3 — Active Directory Authentication Monitoring
+
+Monitored Active Directory authentication activity through Splunk Cloud by generating and analyzing successful logons, failed logons, and account lockout events. Authentication-related event IDs were investigated to validate security visibility and establish a foundation for detection engineering and incident response workflows.
+
+### Evidence Captured
+
+- Successful logon monitoring (Event ID 4624)
+- Failed logon monitoring (Event ID 4625)
+- Account lockout monitoring (Event ID 4740)
+- Authentication event investigation through Splunk search
+- Active Directory security event visibility validation
+
+### Failed Logon Activity (4625)
+
+![Failed Logon Activity](screenshots/phase3-failed-logon-4625.png)
+
+### Successful Logon Activity (4624)
+
+![Successful Logon Activity](screenshots/phase3-successful-logon-4624.png)
+
+### Account Lockout Activity (4740)
+
+![Account Lockout Activity](screenshots/phase3-account-lockout-4740.png)
+
+## Phase 4 — Detection Engineering
+
+Developed security detections within Splunk Cloud to identify authentication anomalies and privileged account activity within the Active Directory environment. Saved searches were created to monitor failed logons, account lockouts, and privileged group membership changes.
+
+### Evidence Captured
+
+- Created failed logon detection for authentication monitoring
+- Created account lockout detection for account abuse identification
+- Created privileged group change detection for elevated access monitoring
+- Established reusable detections for future alerting workflows
+
+### Failed Logon Detection
+
+![Failed Logon Detection](screenshots/phase4-failed-logon-detection.png)
+
+### Account Lockout Detection
+
+![Account Lockout Detection](screenshots/phase4-account-lockout-detection.png)
+
+### Privileged Group Change Detection
+
+![Privileged Group Change Detection](screenshots/phase4-privileged-group-detection.png)
