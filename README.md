@@ -12,8 +12,14 @@ Windows Event Logs were successfully ingested into Splunk Cloud from the domain 
 - Windows System event logs received in Splunk Cloud
 - Host, source, and sourcetype validation for `MSIT-DC01`
 
-- - ![System Events Part 1](proj2screenshots/phase1-forward-server.png)
+### Screenshots
 
-- ![System Events Part 1](proj2screenshots/phase1-system-events-pt1.png)
+#### Universal Forwarder Connected to Splunk Cloud
 
-![System Events Part 2](proj2screenshots/phase1-system-events-pt2.png)
+![Universal Forwarder Connected](screenshots/proj2screenshots:phase1-forward-server.png)
+
+#### Windows System Events Successfully Ingested
+
+![System Events Part 1](screenshots/proj2screenshots:phase1-system-eventspt1.png)
+
+![System Events Part 2](screenshots/proj2screenshots:phase1-system-eventspt2.png)
