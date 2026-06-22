@@ -34,11 +34,11 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 - Verified event parsing through Splunk sourcetypes
 - Confirmed host attribution for collected events
 - Confirmed event collection from domain controller `MSIT-DC01`
-
+- 
 ### Events by Sourcetype
 
-![Events by Sourcetype](screenshots/proj2phase2-sourcetype-counts.png)
+![Events by Sourcetype](screenshots/proj2screenshots:phase2-sourcetype-counts.png)
 
 ### Events by Host
 
-![Events by Host](screenshots/proj2phase2-host-counts.png)
+![Events by Host](screenshots/proj2screenshots:phase2-host-counts.png)
