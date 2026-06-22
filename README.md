@@ -1,45 +1,61 @@
-# Security-Monitoring-Detection-Lab
-Splunk Active Directory Security Monitoring Lab
-Overview
+# Splunk Active Directory Security Monitoring Lab
 
-This project demonstrates the deployment of a Splunk-based security monitoring environment within a Windows Active Directory domain. A Splunk Universal Forwarder was configured on a Windows Server domain controller to securely forward Windows event logs into Splunk Cloud for centralized log analysis and security monitoring.
+## Overview
 
-The environment was used to collect and analyze Security, System, Application, and PowerShell logs, monitor Active Directory authentication activity, investigate security events, develop custom detections, and create dashboards for operational visibility. The project simulates common Security Operations Center (SOC) workflows including log ingestion, authentication monitoring, threat detection, incident investigation, and reporting.
+This project demonstrates the deployment of a Splunk-based security monitoring environment within a Windows Active Directory domain.
 
-Technologies Used
+A Splunk Universal Forwarder was configured on a Windows Server domain controller to securely forward Windows event logs into Splunk Cloud for centralized log analysis and security monitoring.
 
-Infrastructure
-Windows Server
-Active Directory Domain Services (AD DS)
-Domain Controller (MSIT-DC01)
+The environment was used to collect and analyze Windows Security, System, Application, and PowerShell logs, monitor Active Directory authentication activity, create detections, investigate security events, develop dashboards, and automate reporting workflows.
 
-SIEM & Monitoring
+### Technologies Used
 
-Splunk Cloud
-Splunk Universal Forwarder
-Splunk Search Processing Language (SPL)
+#### Infrastructure
 
-Log Sources
+- Windows Server
+- Active Directory Domain Services (AD DS)
+- Domain Controller (MSIT-DC01)
 
-Windows Security Logs
-Windows System Logs
-Windows Application Logs
-Windows PowerShell Logs
+#### SIEM & Monitoring
 
-Security Monitoring Use Cases
+- Splunk Cloud
+- Splunk Universal Forwarder
+- Splunk Search Processing Language (SPL)
 
-Successful Logon Monitoring (Event ID 4624)
-Failed Logon Monitoring (Event ID 4625)
-Account Lockout Monitoring (Event ID 4740)
-Privileged Group Membership Monitoring
-Authentication Investigation Workflows
-Detection Engineering
-Security Dashboard Development
+#### Log Sources
 
-Reporting & Automation
-PowerShell
-CSV Log Export
-Automated Security Reporting
+- Windows Security Logs
+- Windows System Logs
+- Windows Application Logs
+- Windows PowerShell Logs
+
+#### Security Use Cases
+
+- Authentication Monitoring
+- Failed Logon Detection
+- Account Lockout Monitoring
+- Privileged Group Change Detection
+- Security Event Investigation
+- Dashboard Development
+- Detection Engineering
+
+#### Reporting & Automation
+
+- PowerShell
+- CSV Reporting
+- Automated Security Reporting
+
+### Project Objectives
+
+- Deploy Splunk Cloud and configure log forwarding
+- Validate Windows event log ingestion
+- Monitor Active Directory authentication events
+- Create security detections and saved searches
+- Build operational security dashboards
+- Investigate security-relevant events
+- Generate automated security reports
+
+---
 ## Phase 1 — Environment Setup
 
 Deployed a Splunk Cloud security monitoring environment and configured a Splunk Universal Forwarder on a Windows Server domain controller. The forwarder was connected to Splunk Cloud using the Splunk Cloud Universal Forwarder credentials package and verified through an active SSL forwarding connection on port 9997.
