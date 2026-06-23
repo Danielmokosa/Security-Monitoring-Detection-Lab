@@ -112,7 +112,7 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 
 ### Failed Authentication Activity (4776)
 
-![Failed Logon Activity](screenshots/proj2phase3-failed-logon-4625.png)
+![Failed Authentication Activity](screenshots/proj2phase3-failed-authentication-4776.png)
 
 ### Successful Logon Activity (4624)
 
