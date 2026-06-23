@@ -177,3 +177,28 @@ Developed a centralized Active Directory security monitoring dashboard within Sp
 ### Top Event Codes Panel
 
 ![Top Event Codes](screenshots/phase5-top-event-codes.png)
+
+## Phase 6 — Automated Security Reporting
+
+Developed a PowerShell-based reporting workflow to automate extraction of Windows security events for reporting and analysis.
+
+Authentication-related events were exported from the Windows Security log into CSV format, demonstrating basic security reporting and automation capabilities.
+
+### Evidence Captured
+
+- PowerShell security reporting script execution
+- Automated CSV report generation
+- Export of Windows Security event data
+- Basic reporting automation workflow
+
+### PowerShell Report Generation
+
+![PowerShell Report Generation](screenshots/phase6-powershell-report-generation.png)
+
+### Generated CSV Report
+
+![Generated CSV Report](screenshots/phase6-csv-created.png)
+
+### CSV Report Contents
+
+![CSV Report Contents](screenshots/phase6-csv-results.png)
