@@ -116,11 +116,11 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 
 ### Successful Logon Activity (4624)
 
-![Successful Logon Activity](screenshots/phase3-successful-logon-4624.png)
+![Successful Logon Activity](screenshots/proj2phase3-successful-logon-4624.png)
 
 ### Account Lockout Activity (4740)
 
-![Account Lockout Activity](screenshots/phase3-account-lockout-4740.png)
+![Account Lockout Activity](screenshots/proj2phase3-account-lockout-4740.png)
 
 ## Phase 4 — Detection Engineering
 
