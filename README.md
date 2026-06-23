@@ -144,3 +144,36 @@ Developed security detections within Splunk Cloud to identify authentication ano
 ### Privileged Group Change Detection
 
 ![Privileged Group Change Detection](screenshots/phase4-privileged-group-detection.png)
+
+## Phase 5 — Security Dashboard Development
+
+Developed a centralized Active Directory security monitoring dashboard within Splunk Cloud to visualize authentication activity, failed logons, account lockouts, and high-frequency Windows security events. Dashboard panels were created to support rapid investigation and security monitoring workflows.
+
+### Evidence Captured
+
+- Created centralized Active Directory monitoring dashboard
+- Visualized successful authentication activity
+- Visualized failed authentication activity
+- Visualized account lockout events
+- Identified high-frequency Windows security event codes
+- Established analyst-friendly monitoring views
+
+### Active Directory Security Monitoring Dashboard
+
+![Dashboard Overview](screenshots/phase5-dashboard-overview.png)
+
+### Authentication Activity Panel
+
+![Authentication Activity](screenshots/phase5-authentication-activity.png)
+
+### Failed Logons Panel
+
+![Failed Logons](screenshots/phase5-failed-logons.png)
+
+### Account Lockouts Panel
+
+![Account Lockouts](screenshots/phase5-account-lockouts.png)
+
+### Top Event Codes Panel
+
+![Top Event Codes](screenshots/phase5-top-event-codes.png)
