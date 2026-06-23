@@ -105,12 +105,12 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 ### Evidence Captured
 
 - Successful logon monitoring (Event ID 4624)
-- Failed logon monitoring (Event ID 4625)
+- Failed Authentication Activity (4776)
 - Account lockout monitoring (Event ID 4740)
 - Authentication event investigation through Splunk search
 - Active Directory security event visibility validation
 
-### Failed Logon Activity (4625)
+### Failed Authentication Activity (4776)
 
 ![Failed Logon Activity](screenshots/phase3-failed-logon-4625.png)
 
