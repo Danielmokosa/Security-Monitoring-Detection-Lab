@@ -114,11 +114,18 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 - Active Directory security event visibility validation
 
 ### SPL Queries Used
-
+```spl
 EventCode=4624
+```
+
+```spl
 EventCode=4776
+```
+
+```spl
 EventCode=4776
 | timechart count
+```
 
 ### Failed Authentication Activity (4776)
 
