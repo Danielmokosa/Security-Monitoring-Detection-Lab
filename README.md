@@ -155,23 +155,23 @@ Developed a centralized Active Directory security monitoring dashboard within Sp
 
 ### Active Directory Security Monitoring Dashboard
 
-![Dashboard Overview](screenshots/phase5-dashboard-overview.png)
+![Dashboard Overview](screenshots/proj2phase5-dashboard-overview.png)
 
 ### Authentication Activity Panel
 
-![Authentication Activity](screenshots/phase5-authentication-activity.png)
+![Authentication Activity](screenshots/proj2phase5-authentication-activity.png)
 
 ### Failed Logons Panel
 
-![Failed Logons](screenshots/phase5-failed-logons.png)
+![Failed Logons](screenshots/proj2phase5-failed-logons.png)
 
-### Account Lockouts Panel
+### Credential Validation Activity
 
-![Account Lockouts](screenshots/phase5-account-lockouts.png)
+![Credential Validation Activity](screenshots/proj2phase5-Credential-Validation-Activity.png)
 
 ### Top Event Codes Panel
 
-![Top Event Codes](screenshots/phase5-top-event-codes.png)
+![Top Event Codes](screenshots/proj2phase5-top-event-codes.png)
 
 ## Phase 6 — Automated Security Reporting
 
