@@ -186,15 +186,18 @@ Authentication-related events were exported from the Windows Security log into C
 - Automated CSV report generation
 - Export of Windows Security event data
 - Basic reporting automation workflow
+## Phase 6 — Automated Security Reporting
 
 ### PowerShell Report Generation
 
-![PowerShell Report Generation](screenshots/phase6-powershell-report-generation.png)
+![PowerShell Report Generation](screenshots/proj2phase6-powershell-report-generation.png)
 
 ### Generated CSV Report
 
-![Generated CSV Report](screenshots/phase6-csv-created.png)
+![Generated CSV Report](screenshots/proj2phase6-csv-created.png)
 
 ### CSV Report Contents
 
-![CSV Report Contents](screenshots/phase6-csv-results.png)
+![CSV Report Contents](screenshots/proj2phase6-csv-results.png)
+
+![CSV Report Contents Continued](screenshots/proj2phase6-csv-results2.png)
