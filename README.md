@@ -62,10 +62,17 @@ Deployed a Splunk Cloud security monitoring environment and configured a Splunk 
 
 Windows Event Logs were successfully ingested into Splunk Cloud from the domain controller host `MSIT-DC01`, confirming that the log pipeline was operational.
 
+
+### SPL Queries Used
+
+```spl
+index=* | stats count by sourcetype
+index=* | stats count by host
 **Evidence Captured:**
 - Universal Forwarder active forwarding connection
 - Windows System event logs received in Splunk Cloud
 - Host, source, and sourcetype validation for `MSIT-DC01`
+
 
 ### Screenshots
 
@@ -89,7 +96,7 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 - Verified event parsing through Splunk sourcetypes
 - Confirmed host attribution for collected events
 - Confirmed event collection from domain controller `MSIT-DC01`
-- 
+  
 ### Events by Sourcetype
 
 ![Events by Sourcetype](screenshots/proj2screenshots:phase2-sourcetype-counts.png)
@@ -100,7 +107,7 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 
 ## Phase 3 — Active Directory Authentication Monitoring
 
-Monitored Active Directory authentication activity through Splunk Cloud by generating and analyzing successful logons, failed logons, and Credential Validation Monitoring events. Authentication-related event IDs were investigated to validate security visibility and establish a foundation for detection engineering and incident response workflows.
+Monitored Active Directory authentication activity through Splunk Cloud by generating and analyzing successful logons, failed logons, and credential validation events. Authentication-related event IDs were investigated to validate security visibility and establish a foundation for detection engineering and incident response workflows.
 
 ### Evidence Captured
 
@@ -120,6 +127,7 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 
 ### Credential Validation Activity
 ![Failed Authentication Activity](screenshots/proj2phase3-credentiall-validation-activity-4776.png)
+
 ## Phase 4 — Detection Engineering
 
 Developed security detections within Splunk Cloud to identify authentication anomalies and privileged account activity within the Active Directory environment. Saved searches were created to monitor failed logons, Credential Validation Monitoring, and privileged group membership changes.
@@ -186,7 +194,7 @@ Authentication-related events were exported from the Windows Security log into C
 - Automated CSV report generation
 - Export of Windows Security event data
 - Basic reporting automation workflow
-## Phase 6 — Automated Security Reporting
+
 
 ### PowerShell Report Generation
 
