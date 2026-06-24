@@ -33,7 +33,7 @@ The environment was used to collect and analyze Windows Security, System, Applic
 
 - Authentication Monitoring
 - Failed Logon Detection
-- Account Lockout Monitoring
+- Credential Validation Monitoring
 - Privileged Group Change Detection
 - Security Event Investigation
 - Dashboard Development
@@ -100,7 +100,7 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 
 ## Phase 3 — Active Directory Authentication Monitoring
 
-Monitored Active Directory authentication activity through Splunk Cloud by generating and analyzing successful logons, failed logons, and account lockout events. Authentication-related event IDs were investigated to validate security visibility and establish a foundation for detection engineering and incident response workflows.
+Monitored Active Directory authentication activity through Splunk Cloud by generating and analyzing successful logons, failed logons, and Credential Validation Monitoring events. Authentication-related event IDs were investigated to validate security visibility and establish a foundation for detection engineering and incident response workflows.
 
 ### Evidence Captured
 
@@ -122,12 +122,12 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 ![Failed Authentication Activity](screenshots/proj2phase3-credentiall-validation-activity-4776.png)
 ## Phase 4 — Detection Engineering
 
-Developed security detections within Splunk Cloud to identify authentication anomalies and privileged account activity within the Active Directory environment. Saved searches were created to monitor failed logons, account lockouts, and privileged group membership changes.
+Developed security detections within Splunk Cloud to identify authentication anomalies and privileged account activity within the Active Directory environment. Saved searches were created to monitor failed logons, Credential Validation Monitoring, and privileged group membership changes.
 
 ### Evidence Captured
 
 - Created failed logon detection for authentication monitoring
-- Created account lockout detection for account abuse identification
+- Created Credential Validation Monitoring detection for account abuse identification
 - Created privileged group change detection for elevated access monitoring
 - Established reusable detections for future alerting workflows
 
@@ -142,14 +142,15 @@ Developed security detections within Splunk Cloud to identify authentication ano
 ![Privileged Group Change Detection](screenshots/proj2phase4-privileged-group-detection.png)
 ## Phase 5 — Security Dashboard Development
 
-Developed a centralized Active Directory security monitoring dashboard within Splunk Cloud to visualize authentication activity, failed logons, account lockouts, and high-frequency Windows security events. Dashboard panels were created to support rapid investigation and security monitoring workflows.
+Developed a centralized Active Directory security monitoring dashboard within Splunk Cloud to visualize authentication activity, failed logons, Credential Validation Monitoring
+, and high-frequency Windows security events. Dashboard panels were created to support rapid investigation and security monitoring workflows.
 
 ### Evidence Captured
 
 - Created centralized Active Directory monitoring dashboard
 - Visualized successful authentication activity
 - Visualized failed authentication activity
-- Visualized account lockout events
+- Visualized Credential Validation Monitoring events
 - Identified high-frequency Windows security event codes
 - Established analyst-friendly monitoring views
 
