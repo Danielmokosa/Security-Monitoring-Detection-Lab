@@ -114,6 +114,8 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 
 EventCode=4624
 EventCode=4776
+EventCode=4776
+| timechart count
 
 ### Failed Authentication Activity (4776)
 
@@ -140,7 +142,6 @@ Developed security detections within Splunk Cloud to identify authentication ano
   
 ### SPL Queries Used
 
-spl
 EventCode=4624
 | stats count by Account_Name, host
 EventCode=4776
