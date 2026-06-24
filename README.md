@@ -62,18 +62,6 @@ Deployed a Splunk Cloud security monitoring environment and configured a Splunk 
 
 Windows Event Logs were successfully ingested into Splunk Cloud from the domain controller host `MSIT-DC01`, confirming that the log pipeline was operational.
 
-
-### SPL Queries Used
-
-```spl
-index=* | stats count by sourcetype
-index=* | stats count by host
-**Evidence Captured:**
-- Universal Forwarder active forwarding connection
-- Windows System event logs received in Splunk Cloud
-- Host, source, and sourcetype validation for `MSIT-DC01`
-
-
 ### Screenshots
 
 #### Universal Forwarder Connected to Splunk Cloud
@@ -96,6 +84,11 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 - Verified event parsing through Splunk sourcetypes
 - Confirmed host attribution for collected events
 - Confirmed event collection from domain controller `MSIT-DC01`
+
+ ### SPL Queries Used
+
+index=* | stats count by sourcetype
+index=* | stats count by host
   
 ### Events by Sourcetype
 
