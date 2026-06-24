@@ -8,6 +8,9 @@ A Splunk Universal Forwarder was configured on a Windows Server domain controlle
 
 The environment was used to collect and analyze Windows Security, System, Application, and PowerShell logs, monitor Active Directory authentication activity, create detections, investigate security events, develop dashboards, and automate reporting workflows.
 
+## Lab Architecture
+![Lab Architecture](screenshots/Splunk-Active-Directory-Security-Monitoring-Lab.png)
+
 ### Technologies Used
 
 #### Infrastructure
@@ -174,7 +177,6 @@ Developed a centralized Active Directory security monitoring dashboard within Sp
   
 ### SPL Queries Used
 
-spl
 EventCode=4624
 | timechart count
 EventCode=4625
