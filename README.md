@@ -110,6 +110,11 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 - Authentication event investigation through Splunk search
 - Active Directory security event visibility validation
 
+### SPL Queries Used
+
+EventCode=4624
+EventCode=4776
+
 ### Failed Authentication Activity (4776)
 
 ![Failed Authentication Activity](screenshots/proj2phase3-failed-authentication-4776.png)
@@ -131,6 +136,16 @@ Developed security detections within Splunk Cloud to identify authentication ano
 - Created Credential Validation Monitoring detection for account abuse identification
 - Created privileged group change detection for elevated access monitoring
 - Established reusable detections for future alerting workflows
+
+  
+### SPL Queries Used
+
+spl
+EventCode=4624
+| stats count by Account_Name, host
+EventCode=4776
+| stats count by Logon_Account, Source_Workstation, host
+EventCode=4728 OR EventCode=4732 OR EventCode=4756
 
 ### Successful Logon Detection
 
@@ -154,6 +169,19 @@ Developed a centralized Active Directory security monitoring dashboard within Sp
 - Visualized Credential Validation Monitoring events
 - Identified high-frequency Windows security event codes
 - Established analyst-friendly monitoring views
+
+  
+### SPL Queries Used
+
+spl
+EventCode=4624
+| timechart count
+EventCode=4625
+| timechart count
+EventCode=4776
+| timechart count
+index=*
+| top EventCode
 
 ### Active Directory Security Monitoring Dashboard
 
