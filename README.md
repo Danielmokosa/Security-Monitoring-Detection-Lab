@@ -131,17 +131,17 @@ Developed security detections within Splunk Cloud to identify authentication ano
 - Created privileged group change detection for elevated access monitoring
 - Established reusable detections for future alerting workflows
 
-### Failed Logon Detection
+### Successful Logon Detection
 
-![Failed Logon Detection](screenshots/phase4-failed-logon-detection.png)
+![Failed Logon Detection](screenshots/proj2phase4-successful-logon-detection.png)
 
-### Account Lockout Detection
+### Failed Authentication Detection
 
-![Account Lockout Detection](screenshots/phase4-account-lockout-detection.png)
+![Account Lockout Detection](screenshots/proj2phase4-failed-authentication-detection.png)
 
 ### Privileged Group Change Detection
 
-![Privileged Group Change Detection](screenshots/phase4-privileged-group-detection.png)
+![Privileged Group Change Detection](screenshots/proj2phase4-privileged-group-detection.png)
 
 ## Phase 5 — Security Dashboard Development
 
