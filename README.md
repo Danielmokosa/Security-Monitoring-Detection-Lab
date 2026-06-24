@@ -88,10 +88,21 @@ Validated Windows event log ingestion into Splunk Cloud by confirming that event
 - Confirmed host attribution for collected events
 - Confirmed event collection from domain controller `MSIT-DC01`
 
- ### SPL Queries Used
+### SPL Queries Used
 
-index=* | stats count by sourcetype
-index=* | stats count by host
+#### Events by Sourcetype
+
+```spl
+index=* 
+| stats count by sourcetype
+```
+
+#### Events by Host
+
+```spl
+index=* 
+| stats count by host
+```
   
 ### Events by Sourcetype
 
@@ -114,13 +125,20 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 - Active Directory security event visibility validation
 
 ### SPL Queries Used
+
+#### Successful Logons
+
 ```spl
 EventCode=4624
 ```
 
+#### Failed Authentication Activity
+
 ```spl
 EventCode=4776
 ```
+
+#### Credential Validation Activity Over Time
 
 ```spl
 EventCode=4776
@@ -149,14 +167,27 @@ Developed security detections within Splunk Cloud to identify authentication ano
 - Created privileged group change detection for elevated access monitoring
 - Established reusable detections for future alerting workflows
 
-  
-### SPL Queries Used
+  ### SPL Queries Used
 
+#### Successful Logon Detection
+
+```spl
 EventCode=4624
 | stats count by Account_Name, host
+```
+
+#### Failed Authentication Detection
+
+```spl
 EventCode=4776
 | stats count by Logon_Account, Source_Workstation, host
+```
+
+#### Privileged Group Change Detection
+
+```spl
 EventCode=4728 OR EventCode=4732 OR EventCode=4756
+```
 
 ### Successful Logon Detection
 
@@ -181,17 +212,35 @@ Developed a centralized Active Directory security monitoring dashboard within Sp
 - Identified high-frequency Windows security event codes
 - Established analyst-friendly monitoring views
 
-  
 ### SPL Queries Used
 
+#### Authentication Activity Panel
+
+```spl
 EventCode=4624
 | timechart count
+```
+
+#### Failed Logons Panel
+
+```spl
 EventCode=4625
 | timechart count
+```
+
+#### Credential Validation Activity Panel
+
+```spl
 EventCode=4776
 | timechart count
+```
+
+#### Top Event Codes Panel
+
+```spl
 index=*
 | top EventCode
+```
 
 ### Active Directory Security Monitoring Dashboard
 
@@ -226,6 +275,18 @@ Authentication-related events were exported from the Windows Security log into C
 - Export of Windows Security event data
 - Basic reporting automation workflow
 
+### PowerShell Script Used
+
+```powershell
+New-Item -ItemType Directory -Path C:\Reports -Force
+
+Get-WinEvent -FilterHashtable @{
+    LogName='Security'
+    Id=4625
+} |
+Select-Object TimeCreated, Id, ProviderName, Message |
+Export-Csv C:\Reports\FailedLogons.csv -NoTypeInformation
+```
 
 ### PowerShell Report Generation
 
@@ -240,3 +301,16 @@ Authentication-related events were exported from the Windows Security log into C
 ![CSV Report Contents](screenshots/proj2phase6-csv-results.png)
 
 ![CSV Report Contents Continued](screenshots/proj2phase6-csv-results2.png)
+
+## Skills Demonstrated
+
+- Active Directory Administration
+- Windows Event Log Analysis
+- Splunk Cloud Deployment
+- Splunk Search Processing Language (SPL)
+- Security Monitoring
+- Authentication Investigation
+- Detection Engineering
+- Dashboard Development
+- PowerShell Automation
+- Security Reporting
