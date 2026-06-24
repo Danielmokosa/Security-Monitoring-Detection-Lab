@@ -119,7 +119,7 @@ Monitored Active Directory authentication activity through Splunk Cloud by gener
 ![Successful Logon Activity](screenshots/proj2phase3-successful-logon-4624.png)
 
 ### Credential Validation Activity
-![Failed Authentication Activity](screenshots/proj2phase3-credential-validation-activity-4776.png)
+![Failed Authentication Activity](screenshots/proj2phase3-credentiall-validation-activity-4776.png)
 ## Phase 4 — Detection Engineering
 
 Developed security detections within Splunk Cloud to identify authentication anomalies and privileged account activity within the Active Directory environment. Saved searches were created to monitor failed logons, account lockouts, and privileged group membership changes.
